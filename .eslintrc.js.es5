@@ -10,23 +10,14 @@ module.exports = {
     //
     // Safety
     //
-    // Warn about unused variables. An unused variable is generally a sign of an error.
     "no-unused-vars": "warn",
-    // Warn about `alert` calls, we don't want them in production code. Use `eslint-disable-line no-alert` in development-only code.
     "no-alert": "warn",
-    // Use the `eslint-disable-line no-console` comment for intentional console statements.
     "no-console": "warn",
-    // The `no-use-before-define` prevents variable and function use before definition.
     "no-use-before-define": "warn",
-    // The `no-var` enforces `const` and `let`. Use `eslint-disable-line no-var` if required in untranspiled Node.js scripts only.
     "no-var": "off",
-    // The `block-scoped-var` warns about possibly invalid logic when `var` is declared in a block scope and used outside. We prefer `const` and `let` over `var` but keep this for now.
     "block-scoped-var": "warn",
-    // Disable `guard-for-in` because we use `Object.keys().forEach` and do not have to extend `Object.prototype` for older browsers.
     "guard-for-in": "off",
-    // Warn about using the outer scope variable name for an inner scope variable.
     "no-shadow": "warn",
-    // Disable `no-param-reassign` to avoid useless renaming. Be careful.
     "no-param-reassign": "off",
 
     //
@@ -34,11 +25,9 @@ module.exports = {
     //
     "indent": [ "warn", 2, { "SwitchCase": 1 } ],
     "padded-blocks": "off",
-    // The `spaced-comment` warns about the commented-out source code and dirty comments.
     "spaced-comment": "warn",
     "comma-dangle": [ "off" ],
     "space-in-parens": "off",
-    // TODO(@sompylasar): Re-enable `curly` and fix.
     "curly": [ "off", "all" ],
     "array-bracket-spacing": [ "warn", "always" ],
     "object-curly-spacing": [ "warn", "always" ],
@@ -69,12 +58,10 @@ module.exports = {
     "no-underscore-dangle": "off",
     "no-useless-concat": "off",
     "no-mixed-operators": "off",
-    // Keep bitwise for `~`, used with `indexOf`
     "no-bitwise": "off",
     "no-plusplus": "off",
     "no-continue": "off",
     "newline-per-chained-call": "off",
-    // airbnb disallows `for..of` https://github.com/airbnb/javascript/issues/1122#issuecomment-266219071 https://github.com/flying-sheep/eslint-config/blob/v2.0.1/defaults.js#L22
     "no-restricted-syntax": [
       "error",
       "ForInStatement",
