@@ -39,7 +39,6 @@ rules:
   no-trailing-zero: 1
   no-transition-all: 1
   no-url-protocols: 1
-  # TODO(@sompylasar): Re-enable `no-vendor-prefixes`, `sass-lint:disable-line` has been released in v1.10 and we've got it installed. https://github.com/sasstools/sass-lint/pull/677
   no-vendor-prefixes: 0
   no-warn: 1
   property-units: 0
@@ -89,9 +88,6 @@ rules:
     - 1
     -
       max-depth: 3
-  # https://smacss.com/book/formatting#grouping
-  # https://github.com/sasstools/sass-lint/blob/f9ceada1658fdfe11627d8a3cccecc0774cbf312/lib/config/property-sort-orders/smacss.yml
-  # Modified by @sompylasar
   property-sort-order:
     - 1
     -
